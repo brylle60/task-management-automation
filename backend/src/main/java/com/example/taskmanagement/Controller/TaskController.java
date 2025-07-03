@@ -9,14 +9,14 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @RestController
 @RequestMapping("/api")
 public class TaskController {
 
-    @GetMapping("/task")
+    @GetMapping("/tasks")
    public List<task> getAllTasks(){
         return Arrays.asList(
             new task(1L, "Test 1"),
